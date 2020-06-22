@@ -1,0 +1,55 @@
+:root {
+	--font-size: 17px;
+	--btn-width: 10%;
+	--btn-height: 10%;
+	--btn-margin-top: 17%;
+	--btn-border-radius: 2px; 
+}
+
+@media all and (orientation: portrait) {
+	:root {
+		--font-size: 40px;
+		--btn-width: 50%;
+		--btn-height: 20%;
+		--btn-margin-top: 60%;
+		--btn-border-radius: 6px;
+	}
+}
+
+button {
+	margin-top: var(--btn-margin-top, 17%);
+	width: var(--btn-width, 10%);
+	height: var(--btn-height, 10%);
+	color: white;
+	padding: 5px 10px;
+	border-radius: var(--btn-border-radius, 2px);
+	font-weight: bold;
+	font-size: var(--font-size, 17px);
+	outline: none;
+	box-shadow: inset 0 1px #80B0FB;
+	overflow: hidden;
+}
+
+.blue {
+	background: #4C8FFB;
+	border: 1px #3079ED solid;
+}
+
+.blue:hover {
+	border: 1px #C6C6C6 solid;
+	background-color: #4682B4;
+}
+
+.blue:active {
+	background-color: #191980;
+
+}
+
+.toolbar {
+	margin: -0.5em;
+	padding: 20px;
+	color: white;
+	font-family: Helvetica;
+	font-size: var(--font-size, 17px);
+	background-color: #2E86C1;
+}
